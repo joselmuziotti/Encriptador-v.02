@@ -31,7 +31,7 @@ main{
 }
 
 .secciones{
-    background-color: #FC4A1A;
+    background-color: #fd420fc4;
     padding: 20px;
     border-radius: 24px;
     box-shadow: 20px 20px 60px #3fa192,
@@ -50,7 +50,7 @@ h1{
 
 .cuadroTexto{
     border: none;
-    color: #DFDCE3;
+    color: #ffffff;
     margin-top: 5px;
     text-transform: lowercase;
     width: 100%;
@@ -60,7 +60,7 @@ h1{
     text-align: center;
 }
 
-::placeholder{color: #DFDCE3; text-align: center;}
+::placeholder{color: #ffffff; text-align: center;}
     .cuadroTexto:focus{
         outline: none;
     }
@@ -83,7 +83,7 @@ h1{
     background-position: center;
     border: none;
     border-radius: 24px;
-    color: #DFDCE3;
+    color: #ffffff;
     margin-top: 5px;
     text-transform: lowercase;
     width: 100%;
@@ -91,7 +91,7 @@ h1{
     text-align: center;
 }
 
-::placeholder{color: #DFDCE3; text-align: center;}
+::placeholder{color: #ffffff; text-align: center;}
     .cuadroMensaje:focus{
         outline: none;
     }
