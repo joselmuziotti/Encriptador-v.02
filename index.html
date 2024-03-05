@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/053908f806.js" crossorigin="anonymous"></script>
+    <title>Encriptador v.02</title>
+</head>
+<body>
+    <header>
+        <a href="aluracursos.com"><img src="img/aluraoracle.png" alt="Logo Alura + Oracle" class="logoPrime"></a>
+    </header>
+    <main>
+        <section class="secciones">
+            <h1 class="titulos">ENCRIPTADOR</h1>
+            <textarea class="cuadroTexto" cols="30" rows="10" placeholder="Ingresa el texto aqui" required></textarea>
+            <div class="informacion">
+                <h6><i class="fa-solid fa-circle-info"></i> Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="btns" onclick="btnEncriptar(),cambiarMensaje()">Encriptar</button>
+                <button class="btns"onclick="btnDesencriptar(),cambiarMensajeDos()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="arrows">
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        </section>
+        <section class="secciones">
+            <h1 class="titulos">MENSAJE</h1>
+            <textarea class="cuadroMensaje" cols="30" rows="10"></textarea>
+            <div class="informacion">
+                <h6 id="mensajeNoEncontrado"><i class="fa-solid fa-circle-xmark"></i> Mensaje no encontrado.</h6>
+                <h6 id="mensajeEncriptado" style="display: none;"><i class="fa-solid fa-circle-check"></i> Mensaje encriptado.</h6>
+                <h6 id="mensajeDesencriptado" style="display: none;"><i class="fa-solid fa-circle-check"></i> Mensaje desencriptado.</h6>
+            </div>
+            <div class="botones">
+                <button id="copiarBtn" onclick="copiarTexto(),textoCopiado()" class="btns">Copiar</button>
+                <button id="copiadoBtn" class="btns" style="display: none;">Copiado <i class="fa-solid fa-check"></i></button>
+                <button onclick="reset()" class="btns">Reset</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>© Copyright Jose Luis Muziotti</h2>
+        <div class="redesSociales">
+            <a href="https://github.com/joselmuziotti"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joselmuziotti/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
